@@ -125,9 +125,12 @@ def fetch_feed(feed_cfg: dict, lookback_hours: int, max_articles: int,
         raw_snippet = entry.get("summary", entry.get("title", ""))
         snippet = re.sub(r"<[^>]+>", " ", raw_snippet).strip()[:500]
 
+        raw_title = entry.get("title", "")
+        title = re.sub(r"<[^>]+>", " ", raw_title).strip()
+
         articles.append({
             "id": aid,
-            "title": entry.get("title", "").strip(),
+            "title": title,
             "url": link,
             "source": entry.get("source", {}).get("title", parsed.feed.get("title", "")),
             "published_iso": pub_date.astimezone(JST).isoformat() if pub_date else None,
