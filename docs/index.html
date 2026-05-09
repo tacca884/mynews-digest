@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Alerts Digest</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f6f8fa;
+      --surface: #ffffff;
+      --border: #d0d7de;
+      --text-primary: #1f2328;
+      --text-secondary: #57606a;
+      --accent: #0969da;
+      --tag-bg: #eef2ff;
+      --tag-text: #3730a3;
+      --radius: 8px;
+      --shadow: 0 1px 3px rgba(0,0,0,.07), 0 1px 2px rgba(0,0,0,.04);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+                   "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .site-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+    }
+    .header-links { margin-left: auto; display: flex; gap: 12px; align-items: center; }
+    .header-links a {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: background .15s;
+    }
+    .header-links a:hover { background: var(--bg); }
+    .date-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .date-nav button {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 5px 12px;
+      cursor: pointer;
+      font-size: 0.83rem;
+      color: var(--text-primary);
+      transition: background .15s;
+    }
+    .date-nav button:hover:not(:disabled) { background: var(--bg); }
+    .date-nav button:disabled { opacity: .35; cursor: default; }
+    #current-date-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      min-width: 110px;
+      text-align: center;
+    }
+    main {
+      max-width: 960px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+    .filter-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    .filter-btn {
+      padding: 4px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all .15s;
+      color: var(--text-secondary);
+    }
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    .category-section { margin-bottom: 32px; }
+    .category-header {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--border);
+    }
+    .cards-grid {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 640px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 900px) {
+      .cards-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: box-shadow .2s;
+    }
+    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+    .card-title a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .card-title a:hover { text-decoration: underline; }
+    .card-summary {
+      font-size: 0.85rem;
+      color: var(--text-primary);
+      line-height: 1.65;
+      flex: 1;
+    }
+    .card-meta {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+    .card-source { font-size: 0.75rem; color: var(--text-secondary); }
+    .card-date { font-size: 0.73rem; color: var(--text-secondary); margin-left: auto; }
+    .card-tag {
+      font-size: 0.71rem;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+      border-radius: 4px;
+      padding: 1px 7px;
+    }
+    .status-message {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <span class="site-title">My Alerts Digest</span>
+      <div class="date-nav">
+        <button id="btn-prev" onclick="navigateDate(-1)" disabled>← 前日</button>
+        <span id="current-date-label">読み込み中...</span>
+        <button id="btn-next" onclick="navigateDate(1)" disabled>翌日 →</button>
+      </div>
+      <div class="header-links">
+        <a href="admin.html">フィード管理</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="filter-bar" id="filter-bar"></div>
+    <div id="content">
+      <div class="status-message">記事を読み込んでいます...</div>
+    </div>
+  </main>
+
+  <footer>
+    Google Alerts Daily Digest &nbsp;|&nbsp; Powered by GitHub Actions + Gemini API
+  </footer>
+
+  <script>
+    let availableDates = [];
+    let currentDateIndex = 0;
+    let activeCategory = 'all';
+    let currentArticles = [];
+
+    function formatDateJP(isoDate) {
+      const [y, m, d] = isoDate.split('-');
+      return `${y}年${parseInt(m)}月${parseInt(d)}日`;
+    }
+
+    function timeAgo(isoString) {
+      if (!isoString) return '';
+      const diffH = Math.round((Date.now() - new Date(isoString)) / 3600000);
+      if (diffH < 1) return '1時間以内';
+      if (diffH < 24) return `${diffH}時間前`;
+      return `${Math.round(diffH / 24)}日前`;
+    }
+
+    function escHtml(str) {
+      return String(str ?? '')
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+
+    async function loadIndex() {
+      const res = await fetch('data/index.json?t=' + Date.now());
+      if (!res.ok) throw new Error('index.json が見つかりません');
+      return (await res.json()).dates;
+    }
+
+    async function loadDay(dateStr) {
+      const res = await fetch(`data/${dateStr}.json`);
+      if (!res.ok) throw new Error(`${dateStr} のデータがありません`);
+      return res.json();
+    }
+
+    function renderFilterBar(articles) {
+      const cats = ['all', ...new Set(articles.map(a => a.category))];
+      document.getElementById('filter-bar').innerHTML = cats.map(cat => `
+        <button class="filter-btn ${cat === activeCategory ? 'active' : ''}"
+                onclick="setCategory('${cat}')">
+          ${cat === 'all' ? 'すべて' : escHtml(cat)}
+        </button>
+      `).join('');
+    }
+
+    function renderArticles(articles) {
+      const filtered = activeCategory === 'all'
+        ? articles
+        : articles.filter(a => a.category === activeCategory);
+
+      if (!filtered.length) {
+        document.getElementById('content').innerHTML =
+          '<div class="status-message">この日の記事はありません。</div>';
+        return;
+      }
+
+      const groups = {};
+      for (const art of filtered) {
+        (groups[art.category] = groups[art.category] || []).push(art);
+      }
+
+      document.getElementById('content').innerHTML = Object.entries(groups).map(([cat, arts]) => `
+        <section class="category-section">
+          <h2 class="category-header">${escHtml(cat)}</h2>
+          <div class="cards-grid">${arts.map(renderCard).join('')}</div>
+        </section>
+      `).join('');
+    }
+
+    function renderCard(a) {
+      return `
+        <article class="card">
+          <div class="card-title">
+            <a href="${escHtml(a.url)}" target="_blank" rel="noopener noreferrer">
+              ${escHtml(a.title)}
+            </a>
+          </div>
+          <p class="card-summary">${escHtml(a.summary_ja)}</p>
+          <div class="card-meta">
+            ${a.source ? `<span class="card-source">${escHtml(a.source)}</span>` : ''}
+            <span class="card-tag">${escHtml(a.keyword)}</span>
+            ${a.published_iso ? `<span class="card-date">${timeAgo(a.published_iso)}</span>` : ''}
+          </div>
+        </article>`;
+    }
+
+    function setCategory(cat) {
+      activeCategory = cat;
+      renderFilterBar(currentArticles);
+      renderArticles(currentArticles);
+    }
+
+    function navigateDate(delta) {
+      const next = currentDateIndex + delta;
+      if (next < 0 || next >= availableDates.length) return;
+      currentDateIndex = next;
+      loadAndRender();
+    }
+
+    function updateNavButtons() {
+      document.getElementById('btn-prev').disabled = currentDateIndex >= availableDates.length - 1;
+      document.getElementById('btn-next').disabled = currentDateIndex <= 0;
+      document.getElementById('current-date-label').textContent =
+        availableDates[currentDateIndex] ? formatDateJP(availableDates[currentDateIndex]) : '---';
+    }
+
+    async function loadAndRender() {
+      document.getElementById('content').innerHTML =
+        '<div class="status-message">読み込み中...</div>';
+      document.getElementById('filter-bar').innerHTML = '';
+      activeCategory = 'all';
+      updateNavButtons();
+
+      try {
+        const data = await loadDay(availableDates[currentDateIndex]);
+        currentArticles = data.articles || [];
+        renderFilterBar(currentArticles);
+        renderArticles(currentArticles);
+      } catch (e) {
+        document.getElementById('content').innerHTML =
+          `<div class="status-message">データを読み込めませんでした: ${escHtml(e.message)}</div>`;
+      }
+    }
+
+    (async () => {
+      try {
+        availableDates = await loadIndex();
+        if (!availableDates.length) {
+          document.getElementById('content').innerHTML =
+            '<div class="status-message">まだ記事がありません。<br>フィードを登録してGitHub Actionsを実行してください。</div>';
+          document.getElementById('current-date-label').textContent = '---';
+          return;
+        }
+        currentDateIndex = 0;
+        await loadAndRender();
+      } catch (e) {
+        document.getElementById('content').innerHTML =
+          `<div class="status-message">初期化エラー: ${escHtml(e.message)}<br>
+           GitHub Pagesが有効になっているか確認してください。</div>`;
+        document.getElementById('current-date-label').textContent = '---';
+      }
+    })();
+  </script>
+</body>
+</html>

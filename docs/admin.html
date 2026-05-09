@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>フィード管理 - My Alerts Digest</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #f6f8fa;
+      --surface: #ffffff;
+      --border: #d0d7de;
+      --text-primary: #1f2328;
+      --text-secondary: #57606a;
+      --accent: #0969da;
+      --danger: #cf222e;
+      --danger-bg: #fff0f0;
+      --success: #1a7f37;
+      --success-bg: #dafbe1;
+      --radius: 8px;
+      --shadow: 0 1px 3px rgba(0,0,0,.07);
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans",
+                   "Noto Sans JP", sans-serif;
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Lock screen ── */
+    #lock-screen {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: var(--bg);
+    }
+    .lock-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 40px;
+      width: 100%;
+      max-width: 380px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .lock-box h1 { font-size: 1.1rem; margin-bottom: 8px; }
+    .lock-box p { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 20px; }
+    .lock-box input[type="password"] {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      outline: none;
+    }
+    .lock-box input[type="password"]:focus { border-color: var(--accent); }
+    .lock-error {
+      font-size: 0.82rem;
+      color: var(--danger);
+      margin-bottom: 10px;
+      min-height: 1.2em;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 20px;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .site-title { font-size: 1.1rem; font-weight: 700; }
+    .back-link {
+      margin-left: auto;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      text-decoration: none;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .back-link:hover { background: var(--bg); }
+
+    /* ── Main ── */
+    main {
+      max-width: 860px;
+      margin: 28px auto;
+      padding: 0 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    /* ── Sections ── */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ── Setup box ── */
+    .setup-fields { display: flex; flex-direction: column; gap: 12px; }
+    .field-row { display: flex; flex-direction: column; gap: 4px; }
+    .field-row label { font-size: 0.83rem; font-weight: 600; color: var(--text-secondary); }
+    .field-row input {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      font-family: monospace;
+      outline: none;
+    }
+    .field-row input:focus { border-color: var(--accent); }
+    .field-hint { font-size: 0.77rem; color: var(--text-secondary); }
+    .btn {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: var(--radius);
+      border: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .btn:hover { opacity: .85; }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-danger { background: var(--danger); color: white; }
+    .btn-sm { padding: 4px 12px; font-size: 0.8rem; }
+
+    /* ── Toast ── */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(80px);
+      padding: 10px 20px;
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: transform .3s ease;
+      z-index: 200;
+      pointer-events: none;
+    }
+    #toast.show { transform: translateX(-50%) translateY(0); }
+    #toast.success { background: var(--success-bg); color: var(--success); border: 1px solid #b7e4c7; }
+    #toast.error { background: var(--danger-bg); color: var(--danger); border: 1px solid #ffb3b8; }
+
+    /* ── Feed list ── */
+    #feed-list { display: flex; flex-direction: column; gap: 10px; }
+    .feed-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg);
+      flex-wrap: wrap;
+    }
+    .feed-item-info { flex: 1; min-width: 0; }
+    .feed-keyword { font-size: 0.9rem; font-weight: 600; }
+    .feed-category { font-size: 0.78rem; color: var(--text-secondary); }
+    .feed-url { font-size: 0.73rem; color: var(--text-secondary); font-family: monospace; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 400px; }
+    .feed-actions { display: flex; gap: 6px; flex-shrink: 0; }
+    .feed-empty { font-size: 0.88rem; color: var(--text-secondary); text-align: center; padding: 20px 0; }
+
+    /* ── Add form ── */
+    .add-form { display: grid; grid-template-columns: 1fr; gap: 10px; }
+    @media (min-width: 600px) {
+      .add-form { grid-template-columns: 2fr 1fr 1fr auto; align-items: end; }
+    }
+    .add-form input {
+      padding: 8px 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.88rem;
+      outline: none;
+    }
+    .add-form input:focus { border-color: var(--accent); }
+    .add-form input::placeholder { color: #aaa; }
+
+    /* ── Edit modal ── */
+    #modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.4);
+      z-index: 150;
+      align-items: center;
+      justify-content: center;
+    }
+    #modal-overlay.open { display: flex; }
+    .modal {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 28px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 8px 32px rgba(0,0,0,.15);
+    }
+    .modal h3 { font-size: 1rem; margin-bottom: 16px; }
+    .modal-fields { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
+    .modal-actions { display: flex; gap: 10px; justify-content: flex-end; }
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Lock screen -->
+<div id="lock-screen">
+  <div class="lock-box">
+    <h1>管理ページ</h1>
+    <p>このページにアクセスするにはパスワードが必要です。</p>
+    <input type="password" id="pw-input" placeholder="パスワード" onkeydown="if(event.key==='Enter')checkPw()">
+    <div class="lock-error" id="pw-error"></div>
+    <button class="btn btn-primary" style="width:100%" onclick="checkPw()">ログイン</button>
+  </div>
+</div>
+
+<!-- Main app (hidden until unlocked) -->
+<div id="app" style="display:none">
+  <header>
+    <div class="header-inner">
+      <span class="site-title">フィード管理</span>
+      <a href="index.html" class="back-link">← まとめ読みサイトへ</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- GitHub setup -->
+    <section class="section" id="setup-section">
+      <h2>GitHub 設定</h2>
+      <div class="setup-fields">
+        <div class="field-row">
+          <label for="input-owner">GitHubユーザー名</label>
+          <input type="text" id="input-owner" placeholder="例: yourusername">
+        </div>
+        <div class="field-row">
+          <label for="input-repo">リポジトリ名</label>
+          <input type="text" id="input-repo" placeholder="例: my-alerts-digest">
+        </div>
+        <div class="field-row">
+          <label for="input-token">Personal Access Token (repo スコープ)</label>
+          <input type="password" id="input-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+          <span class="field-hint">
+            <a href="https://github.com/settings/tokens/new?scopes=repo&description=MyAlertsDigest" target="_blank" rel="noopener">こちら</a>
+            でトークンを作成（repo スコープを選択）。ブラウザにのみ保存されます。
+          </span>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="saveSetup()">設定を保存</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feed list -->
+    <section class="section">
+      <h2>登録済みフィード</h2>
+      <div id="feed-list">
+        <div class="feed-empty">設定を保存してからフィードを読み込んでください。</div>
+      </div>
+    </section>
+
+    <!-- Add feed -->
+    <section class="section">
+      <h2>フィードを追加</h2>
+      <div class="add-form">
+        <input type="url" id="new-url" placeholder="https://www.google.com/alerts/feeds/...">
+        <input type="text" id="new-keyword" placeholder="キーワード（例: 生成AI）">
+        <input type="text" id="new-category" placeholder="カテゴリ（例: AI技術）">
+        <button class="btn btn-primary" onclick="addFeed()">追加</button>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Edit modal -->
+<div id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal" onclick="event.stopPropagation()">
+    <h3>フィードを編集</h3>
+    <div class="modal-fields">
+      <div class="field-row">
+        <label>RSS URL</label>
+        <input type="url" id="edit-url">
+      </div>
+      <div class="field-row">
+        <label>キーワード</label>
+        <input type="text" id="edit-keyword">
+      </div>
+      <div class="field-row">
+        <label>カテゴリ</label>
+        <input type="text" id="edit-category">
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" onclick="closeModal()">キャンセル</button>
+      <button class="btn btn-primary" onclick="saveEdit()">保存</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<script>
+  // ── Constants ──────────────────────────────────────────────────────────────
+  // SHA-256 of the admin password
+  const PW_HASH = '1284de468183a11d2c2faa43796a46238939e784a6f8297d92ecb85529a53385';
+  const FEEDS_PATH = 'docs/data/feeds.json';
+
+  // ── Lock ───────────────────────────────────────────────────────────────────
+
+  async function sha256(str) {
+    const buf = await crypto.subtle.digest('SHA-256',
+      new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf))
+      .map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  async function checkPw() {
+    const val = document.getElementById('pw-input').value;
+    const hash = await sha256(val);
+    if (hash === PW_HASH) {
+      localStorage.setItem('admin_unlocked', '1');
+      document.getElementById('lock-screen').style.display = 'none';
+      document.getElementById('app').style.display = 'block';
+      loadSetup();
+      tryLoadFeeds();
+    } else {
+      document.getElementById('pw-error').textContent = 'パスワードが違います。';
+    }
+  }
+
+  // Check if already unlocked
+  if (localStorage.getItem('admin_unlocked') === '1') {
+    document.getElementById('lock-screen').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+  }
+
+  // ── Setup storage ──────────────────────────────────────────────────────────
+
+  function loadSetup() {
+    document.getElementById('input-owner').value = localStorage.getItem('gh_owner') || '';
+    document.getElementById('input-repo').value = localStorage.getItem('gh_repo') || '';
+    document.getElementById('input-token').value = localStorage.getItem('gh_token') || '';
+  }
+
+  function saveSetup() {
+    const owner = document.getElementById('input-owner').value.trim();
+    const repo = document.getElementById('input-repo').value.trim();
+    const token = document.getElementById('input-token').value.trim();
+    if (!owner || !repo || !token) { showToast('すべての項目を入力してください', 'error'); return; }
+    localStorage.setItem('gh_owner', owner);
+    localStorage.setItem('gh_repo', repo);
+    localStorage.setItem('gh_token', token);
+    showToast('設定を保存しました', 'success');
+    tryLoadFeeds();
+  }
+
+  function getSetup() {
+    return {
+      owner: localStorage.getItem('gh_owner') || '',
+      repo: localStorage.getItem('gh_repo') || '',
+      token: localStorage.getItem('gh_token') || '',
+    };
+  }
+
+  // ── GitHub API ──────────────────────────────────────────────────────────────
+
+  let currentSha = null;
+  let feeds = [];
+
+  async function apiGet(path) {
+    const { owner, repo, token } = getSetup();
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+      headers: { Authorization: `token ${token}`, Accept: 'application/vnd.github.v3+json' },
+    });
+    if (!res.ok) throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
+    return res.json();
+  }
+
+  async function apiPut(path, content, sha, message) {
+    const { owner, repo, token } = getSetup();
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+      method: 'PUT',
+      headers: {
+        Authorization: `token ${token}`,
+        Accept: 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message,
+        content: btoa(unescape(encodeURIComponent(content))),
+        ...(sha ? { sha } : {}),
+      }),
+    });
+    if (!res.ok) throw new Error(`GitHub API ${res.status}: ${await res.text()}`);
+    return res.json();
+  }
+
+  async function tryLoadFeeds() {
+    const { owner, repo, token } = getSetup();
+    if (!owner || !repo || !token) return;
+
+    try {
+      const data = await apiGet(FEEDS_PATH);
+      currentSha = data.sha;
+      const content = JSON.parse(decodeURIComponent(escape(atob(data.content.replace(/\n/g, '')))));
+      feeds = content.feeds || [];
+      renderFeedList();
+    } catch (e) {
+      if (e.message.includes('404')) {
+        feeds = [];
+        currentSha = null;
+        renderFeedList();
+      } else {
+        showToast('フィードの読み込みに失敗: ' + e.message, 'error');
+      }
+    }
+  }
+
+  async function saveFeeds(message) {
+    const now = new Date().toISOString();
+    const content = JSON.stringify({ feeds, updated_at: now }, null, 2);
+    try {
+      const result = await apiPut(FEEDS_PATH, content, currentSha, message);
+      currentSha = result.content.sha;
+      showToast('保存しました', 'success');
+    } catch (e) {
+      showToast('保存に失敗: ' + e.message, 'error');
+      throw e;
+    }
+  }
+
+  // ── Feed list rendering ────────────────────────────────────────────────────
+
+  function renderFeedList() {
+    const el = document.getElementById('feed-list');
+    if (!feeds.length) {
+      el.innerHTML = '<div class="feed-empty">フィードがまだ登録されていません。</div>';
+      return;
+    }
+    el.innerHTML = feeds.map((f, i) => `
+      <div class="feed-item">
+        <div class="feed-item-info">
+          <div class="feed-keyword">${escHtml(f.keyword)}</div>
+          <div class="feed-category">${escHtml(f.category)}</div>
+          <div class="feed-url" title="${escHtml(f.url)}">${escHtml(f.url)}</div>
+        </div>
+        <div class="feed-actions">
+          <button class="btn btn-secondary btn-sm" onclick="openEdit(${i})">編集</button>
+          <button class="btn btn-danger btn-sm" onclick="deleteFeed(${i})">削除</button>
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function escHtml(str) {
+    return String(str ?? '')
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  // ── Add feed ───────────────────────────────────────────────────────────────
+
+  async function addFeed() {
+    const url = document.getElementById('new-url').value.trim();
+    const keyword = document.getElementById('new-keyword').value.trim();
+    const category = document.getElementById('new-category').value.trim();
+    if (!url || !keyword || !category) { showToast('すべての項目を入力してください', 'error'); return; }
+
+    feeds.push({ url, keyword, category });
+    renderFeedList();
+    try {
+      await saveFeeds(`feat: add feed "${keyword}"`);
+      document.getElementById('new-url').value = '';
+      document.getElementById('new-keyword').value = '';
+      document.getElementById('new-category').value = '';
+    } catch {
+      feeds.pop();
+      renderFeedList();
+    }
+  }
+
+  // ── Delete feed ────────────────────────────────────────────────────────────
+
+  async function deleteFeed(index) {
+    if (!confirm(`「${feeds[index].keyword}」を削除しますか？`)) return;
+    const removed = feeds.splice(index, 1)[0];
+    renderFeedList();
+    try {
+      await saveFeeds(`feat: remove feed "${removed.keyword}"`);
+    } catch {
+      feeds.splice(index, 0, removed);
+      renderFeedList();
+    }
+  }
+
+  // ── Edit modal ─────────────────────────────────────────────────────────────
+
+  let editingIndex = -1;
+
+  function openEdit(index) {
+    editingIndex = index;
+    document.getElementById('edit-url').value = feeds[index].url;
+    document.getElementById('edit-keyword').value = feeds[index].keyword;
+    document.getElementById('edit-category').value = feeds[index].category;
+    document.getElementById('modal-overlay').classList.add('open');
+  }
+
+  function closeModal(e) {
+    if (!e || e.target === document.getElementById('modal-overlay')) {
+      document.getElementById('modal-overlay').classList.remove('open');
+    }
+  }
+
+  async function saveEdit() {
+    const url = document.getElementById('edit-url').value.trim();
+    const keyword = document.getElementById('edit-keyword').value.trim();
+    const category = document.getElementById('edit-category').value.trim();
+    if (!url || !keyword || !category) { showToast('すべての項目を入力してください', 'error'); return; }
+
+    const prev = { ...feeds[editingIndex] };
+    feeds[editingIndex] = { url, keyword, category };
+    renderFeedList();
+    closeModal();
+    try {
+      await saveFeeds(`feat: update feed "${keyword}"`);
+    } catch {
+      feeds[editingIndex] = prev;
+      renderFeedList();
+    }
+  }
+
+  // ── Toast ──────────────────────────────────────────────────────────────────
+
+  let toastTimer = null;
+  function showToast(msg, type = 'success') {
+    const el = document.getElementById('toast');
+    el.textContent = msg;
+    el.className = `show ${type}`;
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => { el.className = ''; }, 3000);
+  }
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+
+  if (localStorage.getItem('admin_unlocked') === '1') {
+    loadSetup();
+    tryLoadFeeds();
+  }
+</script>
+</body>
+</html>
