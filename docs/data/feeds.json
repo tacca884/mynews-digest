@@ -1,4 +1,10 @@
 {
-  "feeds": [],
-  "updated_at": ""
+  "feeds": [
+    {
+      "url": "https://www.google.com/alerts/feeds/05779816910562054177/12427579316252395186",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    }
+  ],
+  "updated_at": "2026-05-09T07:09:51.210Z"
 }
