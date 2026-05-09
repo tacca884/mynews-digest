@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Optional
 
 import feedparser
+import requests
 import yaml
 from google import genai
 from google.genai import types
@@ -29,6 +30,9 @@ log = logging.getLogger(__name__)
 
 JST = timezone(timedelta(hours=9))
 REPO_ROOT = Path(__file__).parent.parent
+# Actions のタイムアウト(30分)に余裕を持たせた全体予算
+GLOBAL_DEADLINE_SECONDS = 22 * 60  # 22分
+_START_TIME = time.monotonic()
 
 
 def load_config() -> dict:
@@ -93,7 +97,9 @@ def fetch_feed(feed_cfg: dict, lookback_hours: int, max_articles: int,
 
     log.info(f"Fetching feed: {keyword} ({url[:60]}...)")
     try:
-        parsed = feedparser.parse(url)
+        resp = requests.get(url, timeout=15, headers={"User-Agent": "Mozilla/5.0"})
+        resp.raise_for_status()
+        parsed = feedparser.parse(resp.content)
     except Exception as e:
         log.error(f"Failed to fetch {url}: {e}")
         return []
@@ -194,7 +200,7 @@ def summarize_article(client: genai.Client, model: str, article: dict,
             err_str = str(e).lower()
             if "429" in err_str or "quota" in err_str or "resource_exhausted" in err_str:
                 if attempt < 2:
-                    wait = 60 * (attempt + 1)
+                    wait = 15 * (attempt + 1)  # 15s, 30s
                     log.warning(f"Rate limit hit, waiting {wait}s (attempt {attempt + 1})")
                     time.sleep(wait)
                 else:
@@ -202,7 +208,7 @@ def summarize_article(client: genai.Client, model: str, article: dict,
                     return None
             elif any(code in err_str for code in ["500", "503", "unavailable"]):
                 if attempt < 2:
-                    time.sleep(10 * (attempt + 1))
+                    time.sleep(5 * (attempt + 1))  # 5s, 10s
                 else:
                     log.error("Server error: giving up on article")
                     return None
@@ -282,6 +288,10 @@ def main():
     total_new = 0
 
     for feed_cfg in feeds:
+        if time.monotonic() - _START_TIME > GLOBAL_DEADLINE_SECONDS:
+            log.warning("Approaching time limit, stopping early to allow commit")
+            break
+
         if daily_counter[0] >= settings["gemini_rpd_limit"] - 10:
             log.warning("Approaching daily API quota limit, stopping early")
             break
@@ -296,6 +306,10 @@ def main():
         for article in articles:
             if article["id"] in existing_ids:
                 continue
+
+            if time.monotonic() - _START_TIME > GLOBAL_DEADLINE_SECONDS:
+                log.warning("Time limit reached mid-feed")
+                break
 
             if daily_counter[0] >= settings["gemini_rpd_limit"] - 10:
                 log.warning("Daily quota limit reached mid-feed")
