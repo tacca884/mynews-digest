@@ -24,7 +24,12 @@
       "url": "https://www.google.com/alerts/feeds/05779816910562054177/9293851096484769473",
       "keyword": "Generative AI",
       "category": "生成AI"
+    },
+    {
+      "url": "https://www.google.com/alerts/feeds/05779816910562054177/16949247274277550482",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
     }
   ],
-  "updated_at": "2026-05-09T07:11:53.808Z"
+  "updated_at": "2026-05-09T07:12:19.229Z"
 }
