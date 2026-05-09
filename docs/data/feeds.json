@@ -34,7 +34,12 @@
       "url": "https://www.google.com/alerts/feeds/05779816910562054177/16949247274277552039",
       "keyword": "AI ソリューション",
       "category": "生成AI"
+    },
+    {
+      "url": "https://www.google.com/alerts/feeds/05779816910562054177/4533096532418568804",
+      "keyword": "AI リコー",
+      "category": "生成AI"
     }
   ],
-  "updated_at": "2026-05-09T07:12:38.490Z"
+  "updated_at": "2026-05-09T07:12:56.762Z"
 }
