@@ -423,23 +423,26 @@
   }
 
   async function tryLoadFeeds() {
+    // 表示は公開URLから直接取得（認証不要）
+    try {
+      const res = await fetch('data/feeds.json?t=' + Date.now());
+      if (res.ok) {
+        const content = await res.json();
+        feeds = content.feeds || [];
+        renderFeedList();
+      }
+    } catch (e) {
+      // 読み込み失敗は無視（初回など）
+    }
+
+    // GitHub API経由でshaも取得しておく（保存時に必要）
     const { owner, repo, token } = getSetup();
     if (!owner || !repo || !token) return;
-
     try {
       const data = await apiGet(FEEDS_PATH);
       currentSha = data.sha;
-      const content = JSON.parse(decodeURIComponent(escape(atob(data.content.replace(/\n/g, '')))));
-      feeds = content.feeds || [];
-      renderFeedList();
     } catch (e) {
-      if (e.message.includes('404')) {
-        feeds = [];
-        currentSha = null;
-        renderFeedList();
-      } else {
-        showToast('フィードの読み込みに失敗: ' + e.message, 'error');
-      }
+      // sha取得失敗は保存時にエラーになる
     }
   }
 
