@@ -1,7 +1,7 @@
 {
   "date": "2026-05-11",
-  "generated_at": "2026-05-11T07:17:55.215379+09:00",
-  "article_count": 30,
+  "generated_at": "2026-05-11T23:28:40.905157+09:00",
+  "article_count": 110,
   "articles": [
     {
       "id": "b688c4409d11b538fe2eb1cf85032c76",
@@ -362,6 +362,806 @@
       "category": "フィジカルAI・ロボット",
       "summary_ja": "(要約を生成できませんでした)",
       "summarized": false
+    },
+    {
+      "id": "69f6a6c2dd700c1ab58716f8614ebc40",
+      "title": "生成AI は「近道」か、それとも「パートナー」か？学びの質を問い直す｜NAKATO TAKAMASA - note",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://note.com/grand_rat5096/n/n80fb681079f9&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw3ZZ4iai9AG--TRIGI46HWw",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T20:39:37+09:00",
+      "snippet": "3月末に公表されたOECDの報告書と動画「Digital Education Outlook 2026」「 生成 型 AI は教育にどのような影響を与えているのか？」に目を通し、これからの学校&nbsp;...",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "4fcc4920da550a6fb761ea870accb971",
+      "title": "北海道の自治体向け 生成AI 「Mir-AI GOV（ミライガバメント）」の提供を開始しました",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://kk.hokkaido-np.co.jp/post-4160/&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw03l8csrIkGVBAvGJz6rpm5",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T20:36:06+09:00",
+      "snippet": "北海道新聞社は、長年蓄積した記事データベースを活用した「自治体向け 生成AI サービス『Mir-AI GOV』」",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "7a05d23217096a95458c4b9f8d2ca6ee",
+      "title": "生成AI と相互ホワイトハッキングする - note",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://note.com/aoyamacpa/n/nef0649c6fc94&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw0vsW3UN86gMR0JgRJiNrHf",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T20:36:06+09:00",
+      "snippet": "...  生成AI がホワイトハッカーとして利用者の思考を揺さぶる──これは確かに一つの用法である。しかし、対話というものの本質を考えれば、",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "7eb066b18cb57149d1c12d68b6b78341",
+      "title": "AI が人から仕事を奪うだって？ 日本を除けばITは常にそうだったのだぞ（2ページ目）",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://xtech.nikkei.com/atcl/nxt/column/18/00148/042700434/%3FP%3D2&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw2iveMfYHIPPbbbyQsifGxK",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T19:58:51+09:00",
+      "snippet": "ちなみに米国で、特に大手ITベンダーでリストラ、大量解雇がアナウンスされるのは、 生成AI やAIエージェントの活用による業務の効率化や生産性の向上を意識しての&nbsp;...",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "1b7d896e3d66645bbde1ff235503d5c4",
+      "title": "「AI×CREATIVE」第3弾！   イラストの精度を上げる 生成AI 活用術とは？",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://x.com/creativecloudjp/status/2053656338794791219&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw1Z87L814uymIi0qNRU1JhT",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T19:57:46+09:00",
+      "snippet": "アドビ クリエイティブ クラウド (@creativecloudjp). 25 likes. ／ 「AI×CREATIVE」第3弾！   イラストの精度を上げる 生成AI 活用術とは？",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "8f3e384ed3fcc73844067ee2d17374eb",
+      "title": "このグラフの見せ方、どっちが正解？伝わるグラフをデザインするセンスを磨こう | アドビ - Adobe",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.adobe.com/jp/creativecloud/roc/blog/design/quiz-challenge/graph.html&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw1y71PnfX2x4HkG-DJMnOTe",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T19:40:58+09:00",
+      "snippet": "Illustratorの 生成AI でグラフ用素材を作る &middot; オリジナルのグラフィックをグラフに適用する方法 &middot; 伸縮しても変形しないグラフを作成する方法（ガイドの活用）.",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "d6a743500c0ddd10d31bbe30946e4148",
+      "title": "話題！ 生成AI を提供！時給1900円！マニュアル作成など - エン派遣",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://haken.en-japan.com/w_109406870/&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw1nmxINftso_yJQ310l0-cL",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T19:32:57+09:00",
+      "snippet": "話題！ 生成AI を提供！時給1900円！マニュアル作成など｜＼！いまどき！／～AIの使い方などのマニュアルを作成～@虎ノ門×1900円！｜派遣のお仕事を探すなら、2024オリコン&nbsp;...",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "8e91a0b9487de8e55515b64c40f06a9e",
+      "title": "6月18日(木) 「現場の知を活かす 生成AI 活用セミナー 〜製造業で進むLLM・画像認識AIの実践 ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.iosi.co.jp/2026/05/11/20260618-seminnar/&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw2i3JBrH8cVmj9ZcAYc9dwp",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T19:19:11+09:00",
+      "snippet": "... AI活用の実践例をもとに、LLMによる社内ナレッジ活用と、画像認識AIによる検品・品質検査の高度化について解説します。 【前半】 製造業における 生成AI ・LLM&nbsp;...",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "9c2c4b140be9d5cb95606695969f368c",
+      "title": "生成AI 導入企業の社員84.7%が陥る&quot;活用停滞&quot;〜自社の課題を特定し - キカガク",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.kikagaku.co.jp/business/training/event/gergz6b44b7&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw1Z8-MO-rCnaonRl3a2BDAV",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T18:50:01+09:00",
+      "snippet": "【無料ウェビナー】  生成AI を導入したものの「現場に定着しない」「活用率が上がらない」 そんな組織に向けて、活用が止まる原因を解説し、自社はどこが課題&nbsp;...",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "9b26e896d196f32203f5ba6e48d14ca1",
+      "title": "コールセンターの 生成AI 利用動向 #ai #コンタクトセンター - YouTube",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/shorts/pmhxGbJHlag&ct=ga&cd=CAIyHGM4ZjhjN2M5ZTEwMjc5Mzg6Y28uanA6amE6SlA&usg=AOvVaw3U0zWQ0eF1o-rnzw6YEPi6",
+      "source": "Google Alert - 生成AI",
+      "published_iso": "2026-05-11T18:48:06+09:00",
+      "snippet": "コンタクトセンター業界の 生成AI 利用動向は？テクマトリックス主催イベントに伴うアンケートから読み解きます。 #コールセンター #コンタクトセンター&nbsp;...",
+      "keyword": "生成AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "af3654923198461b83b8aa927e4ff153",
+      "title": "【決算解説】SONYとTSMCがAI半導体を開発する狙いとは？投資家が解説！ フィジカルAI の本命か？",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DhR7v0o2IxJ0&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw3G4mCjFmkYfWBEvGJUeiSc",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T21:46:05+09:00",
+      "snippet": "SONYがTCMSと フィジカルAI 向けのCMOSイメージセンサーの合弁会社の設立について解説し餡巣。またソニーの決算の内容についても詳しく解説しました。",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "01c43683d2b0ba712a6b6ab199096bb8",
+      "title": "Generative  AI  and Semiconductor Sectors: Computing Demand Expanding Due to ... - YouTube",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3Dc1VyeTSploU&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw1Xx-nRKVtqEP5EvaAnp2ME",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T21:34:27+09:00",
+      "snippet": "[ Physical AI  Roundup] Is the practical application of  physical AI  just around the corner? ...  フィジカルAI は米国勢の独壇場？／AFEELAは売れるか？／日本&nbsp;...",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "b5670e1b73e4f8e7b092d92fcc014e46",
+      "title": "ロボット2体が勝手に連携…米フィギュアが公開した寝室片付けデモが未来すぎた (ビジネス＋IT)",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.yahoo.co.jp/articles/fb83a6e7a45bf1336b9a448e696e3bb6afc0cc20/images/000&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw1DVjbCxtbxqfbR6Bza06ND",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T21:01:59+09:00",
+      "snippet": "【比較】ファナックら5社「 フィジカルAI 」覇権争い、カギは「AI技術」じゃなかった… 5/11(月) 17:20配信. ビジネス＋IT. ©︎SB Creative Corp&nbsp;...",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "a35a52fbef3d98ac6d1141bf36fab60f",
+      "title": "「GMOは主役ではなく前座だった」熊谷会長が語る AI への“危機感”と“ヒューマノイド事業”への挑戦 ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://txbiz.tv-tokyo.co.jp/wbs/netonly/post_340434&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw3UqBCJeiqdQ2mYh1cwT4G2",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T20:49:21+09:00",
+      "snippet": "... だったと語りました。 次なる稼ぎ頭に掲げるAIロボティクス＝ フィジカルAI 革命への挑戦と、AI時代に会社組織を適応させていく取り組みを取材しました。",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "e7046c6f610f73895f43501bcaf6cc35",
+      "title": "フィジカルAI の持つ日本市場ポテンシャル #shorts #中島聡 #国山ハセン - YouTube",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/shorts/8yyn2CCvRcI&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw0a8R9Mb08qVspvo9dBA0lP",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T19:57:29+09:00",
+      "snippet": "中島聡氏へのインタビューシリーズ フィジカルAI の持つ日本市場ポテンシャル.",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "04dda29280cabce6afd3671c5636f73b",
+      "title": "職種・部署別 AI サービスカオスマップを公開！–導入用途別に整理された164製品を一挙紹介–",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://aismiley.co.jp/ai_news/busyobetu-department-based-ai-chaosmap/&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw2qntM_DfqhPrmOQhlQC6LD",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T18:47:07+09:00",
+      "snippet": "生成AIを資料請求. 全て無料！ 選択中の資料を請求する. 「AI課題の⽬利き」コンサルティングサービス.  フィジカルAI ・AIロボット向け教師データ収集・作成.",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "c978d8b2c7a1d6a7d07b08bde7b93436",
+      "title": "雨宮京子氏【最高値圏でやや買い疲れ感？ 目先調整は買いか】(1) ＜相場観特集",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://kabutan.jp/news/marketnews/%3Fb%3Dn202605111169&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw1zgVapVZKBEETC1qRcQm9a",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T18:32:53+09:00",
+      "snippet": "向こう1ヵ月の日経平均は上値が6万9000円、下値は5万9000円前後のゾーンをイメージしている。 個別株に視点を向けると、半導体や フィジカルAI 関連が引き続き相場&nbsp;...",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "9db1880e33eac680602a37c22cce9f4a",
+      "title": "「完全な フィジカルAI (人工知能)を実現するため、ロボットハードウェア企業の買収·合併(M&amp;A)を ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.mk.co.kr/jp/it/12043566&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw18CxnBlmsmWiHKvYfibSx0",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T18:24:22+09:00",
+      "snippet": "... AIオフィスで毎日経済と会い「マウムAIは視覚·言語·行動(VLA)モデルに強みがあるが、昨年農業·国防分野で フィジカルAI プロジェクトを進行しながらロボット&nbsp;...",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "33280585562d348347a70e620ed33316",
+      "title": "ソニーが打ち出した「 AI による成長」と“ただし書き”の中身 26年度経営方針説明会 - ITmedia",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.itmedia.co.jp/news/articles/2605/11/news089_2.html&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw0217LfAAMwq7qjcP8skopr",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T18:22:36+09:00",
+      "snippet": "あるいはAIに対する過度な期待や、AI使用に対する反感を抑える効果も ...  フィジカルAI 分野に照準&nbsp;...",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "b41487211f1f5abbe0af7b270482490b",
+      "title": "フォッグ、オンラインくじ「RAFFLE」シリーズBラウンドにて約3億円調達 - BRIDGE（ブリッジ）",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://thebridge.jp/2026/05/fogg-raises-3-hundred-million-yen-series-b-first-round-for-raffle&ct=ga&cd=CAIyHDg1Y2Q5OWIyMTUyNTA4ZGY6Y28uanA6amE6SlA&usg=AOvVaw3dZBrz7QegbulpBgO455mo",
+      "source": "Google Alert - フィジカルAI",
+      "published_iso": "2026-05-11T18:21:04+09:00",
+      "snippet": "...  フィジカル AI  Agent」の実現を目指しており、2026年4月中旬には建設向けプロダクト「zenshot AI」をリリースした。 今回の調達資金は、 フィジカル AI  Agent&nbsp;...",
+      "keyword": "フィジカルAI",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "85b3aef78fe2ab08af38fa95eda4f7b9",
+      "title": "千鳥・大悟と夫婦役「最初からしっくり」 映画「箱の中の羊」、是枝裕和監督「カンヌでの反応が ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.jiji.com/jc/article%3Fk%3D2026051101047%26g%3Detm&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw3r1NtYQ671zafb-JJnW1g4",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T22:46:53+09:00",
+      "snippet": "今作では“遠くない未来”を舞台に、亡き息子と同じ姿の ヒューマノイド （人型ロボット）を迎え入れた音々（綾瀬）と健介（大悟）の夫婦らの姿が描かれる。是枝&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "e61bb44606a3f85e989cbf4c1260fb59",
+      "title": "『箱の中の羊』で夫婦を演じた綾瀬はるか＆大悟、映画祭に向けて予行演習！レッドカーペット ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://trilltrill.jp/articles/4724714&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw3vwlOC5V9ccVGZDmuxpuzZ",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T22:22:37+09:00",
+      "snippet": "本作は日本映画では『万引き家族』(18)以来、8年ぶりとなる是枝監督のオリジナル脚本。W主演の綾瀬と大悟が息子を亡くした夫婦を演じ、 ヒューマノイド を迎え入れ&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "b4925c8624e39a5c01ac86196dd824ae",
+      "title": "千鳥大悟、カンヌ出席に早くも緊張！綾瀬はるかと夫婦役『箱の中の羊』がコンペ出品",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://woman.excite.co.jp/article/lifestyle/rid_Cinemacafe_109233/&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw0fkNNXbYUmzr_XUPSM4a9M",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T22:17:56+09:00",
+      "snippet": "是枝監督が日本映画では『万引き家族』以来8年ぶりとなるオリジナル脚本を手掛け、近未来を舞台に、亡き息子の姿をした ヒューマノイド を迎え入れた夫婦の物語を&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "07747f50803dfe5bd2923f277d3982f3",
+      "title": "映画「箱の中の羊」綾瀬はるか、千鳥・大悟との夫婦役に「最初からしっくり」 - ナタリー",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://natalie.mu/eiga/news/671547&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw0lZiQiIZ44RMp9fFNPm3SJ",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T22:17:34+09:00",
+      "snippet": "本作は2年前に死んだ息子と同じ姿をした ヒューマノイド を迎え入れた夫婦の物語。 ...  ヒューマノイド 役で出演。舞台挨拶には桒木、共演の寛一郎、柊木陽太&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "b678361c1c36ac8d5781ad5769cefb6c",
+      "title": "綾瀬はるか 「千鳥」大悟が差し伸べた手をまさかのスルー 過度なエスコートは「恥ずかしい」",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://hochi.news/articles/20260511-OHT1T51298.html&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw2GY9BkkI1IYcBHezy_hnWZ",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T22:08:08+09:00",
+      "snippet": "是枝監督が原案・脚本・編集を手掛けた完全オリジナル作品で、少し先の未来が舞台。亡き息子の容姿、声をした ヒューマノイド を迎え入れた夫婦の葛藤と再生を描く&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "af920a657099adc5441b3179839782bc",
+      "title": "綾瀬はるか、11年ぶりタッグ是枝裕和監督は「さらに、すごい領域に行かれた」（日刊スポーツ）",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://topics.smt.docomo.ne.jp/amp/article/nikkangeinou/entertainment/f-et-tp1-260511-202605110001707&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw37xFsXR3wEQHTczS79tS-M",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T21:31:39+09:00",
+      "snippet": "...  ヒューマノイド を迎え入れる物語。野呂は戸建て ... 夫婦が大きな決断に迫られる中、 ヒューマノイド 翔は密かに ヒューマノイド の仲間たちとつながり始める。",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "dcf2d848db61c5c4bfd5add69c200070",
+      "title": "野呂佳代「箱の中の羊」芝居すごさ評判で撮影見学…大悟がトップ俳優ばり「どやった！」 …は",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.yahoo.co.jp/articles/f2d6108e10ec59605a34a09078e22dc6b964304d&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw1LFwrJK0FaJ4PpPx1z1-9S",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T21:16:17+09:00",
+      "snippet": "野呂は戸建て顧客夫婦の妻・羽野佳澄を演じた。 この日は、大悟演じる健介の元で働くタマケン従業員・日高玄役の寛一郎（29）、 ヒューマノイド ・リーダー今野詩季&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "12bb05e5af89efe341f84df9208cb181",
+      "title": "是枝裕和監督『箱の中の羊』で8度目のカンヌ映画祭コンペ出品へ「反応が楽しみ」 - THR Japan",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://hollywoodreporter.jp/japan/197258/&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw2veeVHcYhQpDHOH2Ku3AXV",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T21:01:40+09:00",
+      "snippet": "オーディションで大抜てきされ、 ヒューマノイド と実の息子の2役を演じた桒木は「凄い方たちの共演は信じられなくて、凄い体験になった」と無邪気な笑顔。",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "de6957049ac6d849b923e1127842abe3",
+      "title": "「GMOは主役ではなく前座だった」熊谷会長が語るAIへの“危機感”と“ ヒューマノイド  ... - YouTube",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DAYrBoezqHwQ&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw39WGLSi-4bV2LY1S_kfTOn",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T21:01:20+09:00",
+      "snippet": "「GMOは主役ではなく前座だった」熊谷会長が語るAIへの“危機感”と“ ヒューマノイド 事業”への挑戦【トップを直撃（WBS）】. 170 views · 11 minutes ago.",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "aecba5446d484735440950aa8f7e56f2",
+      "title": "大悟、妻役・綾瀬の天然にツッコミ | 朝日新聞デジタルマガジン＆[and]",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.asahi.com/and/entertainment/16555821&ct=ga&cd=CAIyHGVmYTIxNjQzNjZlZTBiZjA6Y28uanA6amE6SlA&usg=AOvVaw2dIjkgzbsDVlMV-1tDiUpc",
+      "source": "Google Alert - ヒューマノイド",
+      "published_iso": "2026-05-11T20:48:14+09:00",
+      "snippet": "息子の姿をした ヒューマノイド 役を桑木が演じる。 本作で家族を演じる3人。綾瀬は大悟が夫役ということに「大悟さんですか？と最初はびっくりした&nbsp;...",
+      "keyword": "ヒューマノイド",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "ebb87c12587fef57108899b3cf2577bf",
+      "title": "「完全なフィジカルAI(人工知能)を実現するため、 ロボット ハードウェア企業の買収·合併(M&amp;A)を ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.mk.co.kr/jp/it/12043566&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw18CxnBlmsmWiHKvYfibSx0",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T18:24:22+09:00",
+      "snippet": "...  ロボット 購読 サービス (RaaS)」を本格化するという構想だ。 2つのマニピュレーター( ロボット アーム)とグリッパー(トング型ハンド)、AIソリューションを結合&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "1b387c2627a16342a324eaffdbac5f85",
+      "title": "スマート ロボット ソリューション「NexMate」を発表［Hanshow Japan］ | NIKKEI COMPASS",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.nikkei.com/compass/content/PRTKDB000000005_000180931/preview&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw2SblWIR826ACbZpHuVPjLS",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T17:23:39+09:00",
+      "snippet": "...  サービス を終了いたします詳しくはこちら. 次世代店舗を再定義 - Hanshow、スマート ロボット ソリューション「NexMate」を発表［Hanshow Japan］. 2026年5月11&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "58e0480daf9f95da91b79b102af4f8e0",
+      "title": "セレンディップ・ロボクロス、DOBOT社と協働 ロボット の販売代理店契約を締結 - PR TIMES",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://prtimes.jp/main/html/rd/p/000000139.000033982.html&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw1PIvoeMVZtrFSKHywH0JzW",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T16:05:00+09:00",
+      "snippet": "...  サービス へと発展する長期的な関係構築で、継続的な収益機会の創出を目指します。 → RX Nagoya Laboについての開示はこちら. □DOBOT協働 ロボット の特長&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "4092deb67ebe1805451c5b86e8aa9502",
+      "title": "中国モバイル決済 サービス 「WeChat Pay」、韓国など5カ国に導入 | 36Kr Japan",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://36kr.jp/493088/&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw0oRIAWS7gvpn_rH30ihUew",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T13:42:36+09:00",
+      "snippet": "中国のクロスボーダー決済 サービス の相互接続に新たな動きがあった。 ... 注文は殺到、でも作れない——中国人型 ロボット ブームの「供給」という壁【再掲】.",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "38491cd2242bfdc45c30c137bca5d22a",
+      "title": "次世代店舗を再定義 — Hanshow、スマート ロボット ソリューション「NexMate」を発表 - PR TIMES",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://prtimes.jp/main/html/rd/p/000000005.000180931.html&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw0F2y1pFlEw0Gbple8X1Ywc",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T12:33:56+09:00",
+      "snippet": "ロボット ・フリート管理：複数台 ロボット を効率的に集中制御. リモート ... 商品 サービス . ビジネスカテゴリ: 広告・宣伝・PR. キーワード: ESL電子棚札&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "14ad1bed99ec8a09b8cfa982f65249cc",
+      "title": "ビー・アンド・プラス、犬型 ロボット 搭載ドローンステーションシステムの提供開始 | チバテレ＋ ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.chiba-tv.com/plus/detail/2026051613554&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw04U_3Xmp8Xrwma4jk6PEGB",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T11:42:30+09:00",
+      "snippet": "... ＋プラス | 2026年4月25日、ビー・アンド・プラスは、犬型 ロボット  ... 当ウェブサイトは、利便性の向上や サービス の機能改善、アクセス分析や広告&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "2c382187b36467a2e0715fe637df1dae",
+      "title": "人協働 ロボット が切り拓く研究現場の新常識 ラボラトリーオートメーションをテーマにオンライン ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://prtimes.jp/main/html/rd/p/000000173.000073630.html&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw35F4TuqUNXbFKM_2Ilpc1a",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T10:06:16+09:00",
+      "snippet": "... （2026年5月11日 10時00分）人協働 ロボット  ... レコメンド サービス . PR TIMES STORY &middot; 動画制作・動画PRならPR TIMES TV &middot; 記者&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "c320972895ad22cbee6b73c65d67b99a",
+      "title": "【コマースロボティクス】顧客伴走型のオフショアAI開発 サービス 「Global AI Lab」を提供開始",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://prtimes.jp/main/html/rd/p/000000045.000087427.html&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw3m4OnDxyIGzsU8CIq8j5vY",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T09:02:29+09:00",
+      "snippet": "発注管理システム「コマース ロボ EOS」ついに サービス 提供を開始！ 2024年2月29日 18時00分. RPA内蔵型EC自動出荷システム「Commerce Robo（コマース ロボ &nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "63e1b8c34001e5de57a80675dba94b9f",
+      "title": "トークン呼び出し量の増加が演算能力 サービス の飛躍的な向上を推進―中国 - Record China",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.recordchina.co.jp/b976538-s6-c20-d0165.html&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw3v6cG_Bu6BiO5psq9m2thB",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T08:53:21+09:00",
+      "snippet": "...  サービス の飛躍的な向上を推進―中国. 人民網日本語版 2026年5月11日 08:30. facebook X mail url copy. AI・ ロボット  &middot; AI・ ロボット . 拡大. 8日、中国国家&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "ca7fd9b34c778ec063277036058af5ad",
+      "title": "ロボ タクシーの競争軸は技術から運用へ - レスポンス（Response.jp）",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://response.jp/article/2026/05/11/411073.html&ct=ga&cd=CAIyHDAzNWI1NDI2N2ZmMGI5MTE6Y28uanA6amE6SlA&usg=AOvVaw2mCwtszADrmUVzkexRjAmZ",
+      "source": "Google Alert - ロボット サービス",
+      "published_iso": "2026-05-11T06:31:06+09:00",
+      "snippet": "1. サービス オペレーターへの&nbsp;...",
+      "keyword": "ロボット サービス",
+      "category": "フィジカルAI・ロボット"
+    },
+    {
+      "id": "cd8e014648b60501656a8436990340eb",
+      "title": "What Are Your Company's  AI  Nightmares? - Harvard Business Review",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://hbr.org/2026/05/what-are-your-companys-ai-nightmares&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw1tMAQ1ZrbJRjmC3YgUMWGj",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T21:35:47+09:00",
+      "snippet": "... AI ethical risk (or Responsible AI or AI ... When  generative AI  showed up, organizations updated their programs to accommodate the new technology.",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "2cd55db492f29205b928860be3aa4a02",
+      "title": "Who Will Solve the  AI  Productivity Puzzle? by Robin Rivaton - Project Syndicate",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.project-syndicate.org/commentary/why-ai-hasnt-yielded-productivity-growth-by-robin-rivaton-2026-05&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw1c50Jj-RCZicJlhkoYu9g2",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T21:14:33+09:00",
+      "snippet": "Generative AI  tools have been widely available for several years now, but productivity growth has little sustained improvement, because firms have&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "2e0c5bd9dffa6b33446ec779f57d40b9",
+      "title": "Getting started with  AI : What non-technical staff need to know - Candid",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://candid.org/blogs/ai-for-nonprofits-getting-started&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw3fGM55c4uanj1RqBJnxpKE",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T21:02:05+09:00",
+      "snippet": "Being part of the Decoded Futures cohort narrowed our options from the start: We knew we'd be using ChatGPT, one of the most widely used  generative AI &nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "dddae78c6300500a87afd15e0ef8ac8e",
+      "title": "Part 3 - AI basics for everyone: GenAI v/s AI People often use “AI” and “ Generative AI  ... - Instagram",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.instagram.com/reel/DYMl19-Cgy_/&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw2JNIIYbddAxQa8J8fwm-gW",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T20:40:41+09:00",
+      "snippet": "Now you can ask me, toh kya  generative AI  mein prediction nahi hota? Bilkul hota hai. Every AI or machine learning model essentially works on a&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "1da7afaf27a9135dc77e63518cdb6472",
+      "title": "Navigating Legal Protections In The Time Of  Generative AI  - Forbes",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.forbes.com/councils/forbesbusinessdevelopmentcouncil/2026/05/11/navigating-legal-protections-in-the-time-of-generative-ai/&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw3-OfguCp1mwEojZfQUD6YF",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T20:35:51+09:00",
+      "snippet": "Heppner's counsel argued that FBI-seized exchanges Heppner had with  generative AI  applications should be protected by attorney-client privilege and by&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "291949a6b12beb4215b1f8da312b3119",
+      "title": "Predictive vs  Generative AI : How They Work and When to Use Each - YouTube",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.youtube.com/watch%3Fv%3DphOhGqpXss4&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw2-QQ2UXbgmjbb-N361Fxf3",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T20:18:35+09:00",
+      "snippet": "Learn more about Predictive AI vs  Generative AI  here → https://ibm.biz/BdpPNf Predictive AI asks what will happen, while  generative AI  asks what&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "e6ddde5ebc71b38b5d3a15eb58489635",
+      "title": "Generative Artificial Intelligence  Can Significantly Reduce the Number of Animal Experiments",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://idw-online.de/en/news870650&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw21b5F-zKGh_4lWA04NH3vD",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T20:02:12+09:00",
+      "snippet": "Generative AI  methods generally risk amplifying not only the relevant signal but also noise and random variation. This problem is known as error&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "bbbe468839ac584d6f1bc111d0ce7d6e",
+      "title": "'Your Career Starts at the Beginning of the  AI  Revolution,' NVIDIA CEO Tells Graduates",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://blogs.nvidia.com/blog/nvidia-ceo-carnegie-mellon-commencement-address/&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw2Yd9ABl5_8Gq4eeFAQzkTM",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T19:55:39+09:00",
+      "snippet": "Generative AI ﻿ &middot; AI for Good﻿ &middot; Research﻿. AI Infrastructure. AI Factory ... AI capabilities and AI safety together.” And Huang didn't leave out&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "9dba429c44df144bf2d4f9bf003bd722",
+      "title": "Meet the academics refusing to use  generative AI  | Jarrett Blaustein - LinkedIn",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.linkedin.com/posts/jarrett-blaustein-a04a57169_meet-the-academics-refusing-to-use-generative-activity-7459534474381324288-4q4U&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw2EScm2X4iCIu2qQLVzkyLG",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T19:41:05+09:00",
+      "snippet": "I am very resistant to using  generative AI  for scholarly purposes, specifically academic research and writing. It's a bit scary to adopt this&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "f5a18e35aec6ba95481b1d940d2034ae",
+      "title": "Generative Artificial Intelligence  Can Significantly Reduce the Number of Animal Experiments - News",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.uni-marburg.de/en/prfolder-en/news/generative-artificial-intelligence-can-significantly-reduce-the-number-of-animal-experiments&ct=ga&cd=CAIyHDBmMDEwNGMxYmY4MTZkMzI6Y28uanA6ZW46SlA&usg=AOvVaw1pK_wFanhbe45FoObyQ1H9",
+      "source": "Google Alert - Generative AI",
+      "published_iso": "2026-05-11T19:27:18+09:00",
+      "snippet": "Alfred Ultsch from Marburg University—both of whom do not conduct animal experiments themselves—developed a  generative AI  called genESOM. It is&nbsp;...",
+      "keyword": "Generative AI",
+      "category": "生成AI"
+    },
+    {
+      "id": "1ae0d359fdae959a56c567822128ccf9",
+      "title": "生成 AI と半導体セクター（トークン急増によって計算需要が拡大中。エヌビディアの目標株価を ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://media.rakuten-sec.net/articles/-/52364&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw1TqKaLt9ywIAOxN-wCzr10",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T21:08:39+09:00",
+      "snippet": "また、メタは自社の広告事業のために巨額の生成 AI を含む AI 向け設備投資を続けています。 ...  アプリ に「ポイントミッション機能」を追加しました。 記事を読むなど&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "f1334a5492acf8541bd7710e361f0765",
+      "title": "AI  Rig Complex（ARC）とは｜Rust製Rigフレームワーク・トークン解説 - Phemex",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://phemex.com/ja/academy/https/what-is-ai-rig-complex-arc&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw2DfwsqPSWivAB-yBCLhPS6",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T18:35:26+09:00",
+      "snippet": "AI  Rig Complex（ARC）は、Rust製のモジュール型・軽量 AI エージェントおよびLLM活用 アプリ 開発向けオープンソースフレームワーク「Rig」を中心に構築されています&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "70128996491007f08c65839a15487a01",
+      "title": "三井住友フィナンシャルグループとSakana  AI 、提案書自動生成 アプリ を開発 - AIsmiley",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://aismiley.co.jp/ai_news/smbc-sakana-ai-application/&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw2qvM31ZjupmQ9A_qb9c74R",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T18:23:40+09:00",
+      "snippet": "SMBCグループとSakana  AI は、生成 AI を活用した「提案書自動生成アプリケーション」を開発し、三井住友銀行で導入を開始したと発表しました。",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "e17e04cd4bfbbc30a99012f65219f248",
+      "title": "SynClubが AI キャラクターフェスティバルに出展、漫画・ゲーム制作体験が可能 - 公募ガイド",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://koubo.jp/article/77943&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw1xWxdyaKFxZ9NXWzToJLmE",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T18:09:31+09:00",
+      "snippet": "AI チャット アプリ 「SynClub」がイベント出展 &middot; 1人のキャラクターから広がる創作体験 &middot; 漫画機能が2か月で1万部を突破 &middot; プログラミング不要でゲーム制作が可能.",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "293e47537de071e18d17d5586ad4bf13",
+      "title": "スマートマネーの流れ先：ウォール街からジョホールへ、 AI インフラ競争 - Moomoo",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.moomoo.com/ja/community/feed/where-smart-money-flows-the-ai-infrastructure-race-from-wall-116555133681670&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw3SHd3LgxwfZIDTZezmHdJN",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T18:08:29+09:00",
+      "snippet": "アプリ で開く &gt;. Nebius earnings preview: Revenue is soaring but so is ... 米国とマレーシア市場で展開される AI インフラテーマをカバーする週次クイックまとめ&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "d932e13e6d9a4a1de534a43e76f9cc4e",
+      "title": "Anthropic、Claude for Microsoft 365を一般提供 Excel・Word・PowerPointで文脈を引き継ぐ AI  ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://ledge.ai/articles/claude_for_microsoft_365_general_availability&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw3WJpnH1rrVNw_15SMXcp7J",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T17:00:45+09:00",
+      "snippet": "...  アプリ 内でClaudeを利用できるアドインだ。Anthropicによると、Claudeは複数のMicrosoft 365 アプリ をまたいで会話の文脈を保持できる。たとえば、Excel上の&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "12c2fb652dc19f6fca5410e77ca80ccb",
+      "title": "ビルの“管理 AI ”から逃れつつ無人のオフィスから脱出するホラーゲーム『Zangyou』が面白そう",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.denfaminicogamer.jp/news/2605112a&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw1xHCsBqgHg7Rc3wH2bc-Wv",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T16:32:53+09:00",
+      "snippet": "注目度6633. 原稿制作のスケジュール管理 アプリ 『原稿プランナー』がSNSで話題に。 ... 本作はビルを管理している敵対的な AI から逃れつつ、オフィスからの脱出を&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "d3bd6ec12b4e4582b7178a3dd50a3c49",
+      "title": "AI がリモートPCを操作するなら？ ～Ichigeki氏が新 アプリ 「Urthr 0.5.0」をリリース - 窓の杜",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://forest.watch.impress.co.jp/docs/news/2107444.html&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw00NcXlK2_ykbQ2czp9YYXO",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T16:24:10+09:00",
+      "snippet": "この アプリ も「Brynhildr Free」がベースになっているという。 「Urthr」（ウルズ）は、もし AI がリモートデスクトップを利用するならば、どんな アプリ になるだろう&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "300b94042e5c409320c2bd62e85d9b5c",
+      "title": "ＪＴＰ株式会社【2488】開示資料-StockWeather",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://finance.stockweather.co.jp/contents/stockdetail.aspx%3Fcntcode%3DJP%26skubun%3D1%26stkcode%3D2488%26exctype%3D000%26contents%3D7%26detail%3D1%26disclosure%3D20260511521404&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw3IO1uz-KAWjDxAG8TbdQ3t",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T16:00:22+09:00",
+      "snippet": "...  AIアプリ 開発プラットフォーム「Dify」支援を強化. 2026/02/12. pdf 2026年3月 ... pdf 「Third  AI  生成 AI ソリューション」、最新の生成 AI モデル「GPT&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "8a0ec783c83768a9d90dafca9f5d2562",
+      "title": "電通・博報堂・CAの AI プラットフォームはPhotoshopの「入口」を奪うのか？ 広告制作現場の地殻 ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.advertimes.com/20260511/article543528/3/&ct=ga&cd=CAIyHGMzM2VkZTk4YjUyZDMxMmU6Y28uanA6amE6SlA&usg=AOvVaw2_q-6osDxQJkc1du0AGfqe",
+      "source": "Google Alert - AI アプリ",
+      "published_iso": "2026-05-11T15:50:56+09:00",
+      "snippet": "2026年4月、Adobeはバックエンド戦略の三層構造(Firefly  AI  Assistant、Anthropic Claude connector、 アプリ 別機能強化)と、それを支えるGenerative Credit&nbsp;...",
+      "keyword": "AI アプリ",
+      "category": "生成AI"
+    },
+    {
+      "id": "bf623e3c1f075d8118f1a86395186a71",
+      "title": "SANY、電動・自律型・ AI 対応 ソリューション でグローバルなインテリジェント機器ポートフォリオ ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.agara.co.jp/article/633341&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw0oyDB-eaDHgmmqTqNGj9YU",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T22:22:59+09:00",
+      "snippet": "SANY、電動・自律型・ AI 対応 ソリューション でグローバルなインテリジェント機器ポートフォリオを拡充. （2026年5月11日 10時15分 更新）. PRワイヤー. 上海&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "43c45f2f6dcf26ce61403ac72f8d3c93",
+      "title": "「ソニーコーポレートブログ」更新のご案内 ソニーグループ2026年度経営方針 ... - Sony",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.sony.com/ja/SonyInfo/News/Press/info/202605/002.html&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw0K5-XJ4McwOKIQnWB3Mg1g",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T21:21:47+09:00",
+      "snippet": "イメージング&amp;センシング・ ソリューション  &middot; 金融事業 &middot; 新しい取り組み. 閉じる ... 加えて、 AI とそれによって生まれるソニーグループの新たな成長の機会&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "e4bbbe1c62d6fb11f7cbdb4c8cde83dc",
+      "title": "物流現場の自動化 ソリューション 提供のラピュタロボティクス、UPSIDER BLUE DREAM Fund ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://thebridge.jp/2026/05/rapyuta-robotics-secures-debt-financing-from-upsider-blue-dream-fund&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw30-DzP_MCM_k4neFshC9mS",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T20:42:05+09:00",
+      "snippet": "今回の調達資金は、オンラインオリジナル公式グッズ事業のマーケティング強化、 AI  およびテックを活用したオペレーション高度化に充当する。同社は&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "0725b6625d23458a58d74e817d4f7def",
+      "title": "【5/28開催オンラインセミナー】非連続的発見を創薬価値へ～Drug Discovery  AI  Factoryが実現 ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.fronteo.com/blog/20260528-lsai%3FhsLang%3Den&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw3woHZvztBCD7i_vmCB03dd",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T19:49:38+09:00",
+      "snippet": "近年、 AI 活用の中心は生成 AI へとシフトし、「 AI ＝生成 AI 」という認識が一般化しています。 ...  ソリューション  &middot; プロダクト・サービス &middot; 事例・実績 &middot; イベント・&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "07968d5e0f21abdf33773a8a64da628a",
+      "title": "「エアトリ超サマーセール2026」が本日5月11日（月）より開催！～海外旅行からスタート！お ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.airtrip.co.jp/news/15768/&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw1gdyVvSLIqfpZbytMUqPeA",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T18:07:13+09:00",
+      "snippet": "ヘルスケア事業 人材 ソリューション 事業  AI ロボット事業 ゴルフライフ ... 生成系 AI 総合プラットフォーム「エアスマ AI 」, https://smartai.airtrip.co&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "7a43daeed17348e0d14066c05590a8cc",
+      "title": "【台湾】メディアテック、研究開発データセンター稼働：時事ドットコム",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.jiji.com/jc/article%3Fk%3D2026051100458%26g%3Djnb&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw2Z-M4s99imBHgHsNMER5HA",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T17:03:59+09:00",
+      "snippet": "...  ＡＩ やクラウド ＡＩソリューション の研究開発ニーズに対応すると説明している。 同社によると、台湾のデータセンターとしては初めて、米半導体大手エヌビディアの ＡＩ &nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "5311da6e3e1b83def908a2070c9bce7a",
+      "title": "アクセンチュア、 AI を中核に据えた企業変革の加速に向けて Anthropicとの日本での協業体制を強化",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://newsroom.accenture.jp/jp/news/2026/accenture-and-anthropic-to-drive-enterprise-reinvention-with-ai-in-japan&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw1HiwId61WlDD2yM-igx6CE",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T17:03:05+09:00",
+      "snippet": "また両社は、Claudeを基盤としたサイバーセキュリティ運用の新 ソリューション 「Cyber. AI 」を2026年3月に発表しています。 こうしたグローバルでの実績を基盤に、&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "51b4d5b3e39ba5d5b47cb0187e15f44b",
+      "title": "リコー、LIFULLと連携し360度空間データと AI で賃貸物件の動画コンテンツを自動生成する ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://jp.ricoh.com/release/2026/0511_1&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw1XA_4c6TLQ0kMsDhaso4XN",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T17:02:52+09:00",
+      "snippet": "リコーグループは、お客様のDXを支援し、そのビジネスを成功に導くデジタルサービス、印刷および画像 ソリューション などを世界約200の国と地域で提供しています（&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "3d24d08e6d45f253ddac601eb3ddde15",
+      "title": "AI 時代を支える次世代電力インフラの構築に向けて、ギガワット時規模の国産バッテリー事業を ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.softbank.jp/corp/news/press/sbkk/2026/20260511_01/&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw01tWnNmdWRvCbub5iXPmnJ",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T17:02:48+09:00",
+      "snippet": "COSMOS LABが有する亜鉛ハロゲン化物バッテリーは電解液に真水を使用しており、現在の主流であるリチウムイオンバッテリーが抱える発火リスクを解決できることが&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "78b968aea0c96a219be5183e3b6e0867",
+      "title": "次世代宇宙用MPUを活用したオンボード AI 物体検知機「AIRIS」が軌道上で船舶検知に成功",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.mhi.com/jp/news/260511.html&ct=ga&cd=CAIyHGUzYjQwZDlkOWE5YmZlMGQ6Y28uanA6amE6SlA&usg=AOvVaw13sXvE0bQ8Z_SpvIBFqG1J",
+      "source": "Google Alert - AI ソリューション",
+      "published_iso": "2026-05-11T17:02:22+09:00",
+      "snippet": "...  ソリューション . 製品・ ソリューション . キー ソリューション  &middot; CCUS（CO₂の回収 ... 次世代宇宙用MPUを活用したオンボード AI 物体検知機「AIRIS」が軌道上で船舶検知&nbsp;...",
+      "keyword": "AI ソリューション",
+      "category": "生成AI"
+    },
+    {
+      "id": "a83ab638f269e74aac3491a0342fa856",
+      "title": "リコー とライフル、 AI で賃貸物件の紹介動画生成 360度カメラ活用 - 日本経済新聞",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.nikkei.com/article/DGXZQOUC112SF0R10C26A5000000/&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw01YFwzVa72kmW18joKUSLU",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T19:12:29+09:00",
+      "snippet": "リコー は11日、住宅情報サイト運営のLIFULL（ライフル）と人工知能（ AI ）で賃貸物件の紹介動画を自動生成する取り組みを始めると発表した。360度カメラで撮影&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "b5bd6a11c078ea5800d3a55ce24315cf",
+      "title": "リコー 、 AI で360度画像から物件動画を自動生成する取り組みを開始 LIFULL HOME'Sと連携",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.chiba-tv.com/plus/detail/2026051614915&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw0irWOiRc-KmI_ldZVRI2RI",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T17:35:13+09:00",
+      "snippet": "チバテレ＋プラス | 株式会社 リコー は11日、360度カメラ「 RICOH  THETA」で取得した360度空間データをもとに...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "839b249bf9ee19d6128d6418b5b6c355",
+      "title": "リコー 、 AI で360度画像から物件動画を自動生成する取り組みを開始 LIFULL HOME'Sと連携",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://cloud.watch.impress.co.jp/docs/news/2107525.html&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw108XNPWwlkxNCHwhnIkyuW",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T16:53:25+09:00",
+      "snippet": "株式会社 リコー は11日、360度カメラ「 RICOH  THETA」で取得した360度空間データをもとに、独自の AI を活用して賃貸物件向けの情報掲載・集客業務用コンテンツ&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "02dd626c9c446c42fc3ccf2e9a025bde",
+      "title": "LIFULL HOME'S」が360度空間データからの賃貸物件動画を AI 自動生成する機能を会員向けに ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.nikkei.com/nkd/company/article/%3FDisplayType%3D11%26ng%3DDGXZRSP706814_R10C26A5000000%26scode%3D7752%26n_cid%3DSNSBS002&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw299Nwy4ZFK9EV66qlCD4nM",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T15:57:45+09:00",
+      "snippet": "【プレスリリース】発表日:2026年05月11日 FULL HOME'S賃貸、360度空間データから物件動画を AI で自動生成する機能を2026年6月より開始  リコー 独自の AI を活用&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "14938de1229338e441f43dd39a0d9332",
+      "title": "リコー 、LIFULL HOME'Sの賃貸物件で360度カメラ「 RICOH  THETA」を活用 - AI Watch",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://ai.watch.impress.co.jp/docs/news/2107551.html&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw0hY5bOfhYOXn4qOFSxnv9u",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T14:06:33+09:00",
+      "snippet": "リコー は、360度カメラ「 RICOH  THETA」で取得した360度空間データをもとに、独自の AI を活用し賃貸物件向けの情報掲載・集客業務用コンテンツを自動生成する&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "b9b3796c679973fa031a787382280429",
+      "title": "リコー ジャパン、会議室AV機器の運用サポートを開始 - 北海道新聞デジタル",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.hokkaido-np.co.jp/article/1310092/&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw2gl96sEGjb2G3qtogN9A3O",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T13:50:23+09:00",
+      "snippet": "リコー ジャパン、会議室AV機器の運用サポートを開始. 2026年5月11日 13 ...  AI で100本作っても、なぜ売れない？ 人を動かす広告に必要なのは“インサイト&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "b3529e8caaff5014aa9e20c2142036ea",
+      "title": "360度空間データから物件動画を AI で自動生成する機能を2026年6月より開始［LIFULL］ | NIKKEI ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.nikkei.com/compass/content/PRTKDB000000861_000033058/preview&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw1a_oiiSfgMKLwMnPfdo58z",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T13:50:10+09:00",
+      "snippet": "【NIKKEI COMPASS】 リコー 独自の ＡＩ を活用した「ＲＩＣＯＨ３６０ ビジネスパッケージ 集客 ＡＩ 」を導入パノラマ画像から手間なく動画を生成し、掲載情報の「量と質」の&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "4b3832ba8183e56c2492c1cd20f4ada2",
+      "title": "リコー ジャパン、会議室AV機器の運用サポートを開始 - ZDNET Japan",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://japan.zdnet.com/release/31167006/&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw0ntlf10zJzF6P2iYr3DbaI",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T13:05:27+09:00",
+      "snippet": "...  リコー のVRが変える設計現場 &middot; ダイフクが「 RICOH  オンプレLLMスターターキット」採用-- AI アプリ導入を支援 &middot;  リコー ジャパン株式会社 &middot;  リコー ジャパン株式会社&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "fe63feedbdf9ce7a5f1f4a2f9329db6d",
+      "title": "LIFULL HOME'S」が360度空間データからの賃貸物件動画を AI 自動生成する機能を会員向けに ...",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://www.nikkei.com/article/DGXZRSP706814_R10C26A5000000/&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw0yjQBvMkDfaSV12ilkM_AO",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T12:39:20+09:00",
+      "snippet": "...  AI で自動生成する機能を2026年6月より開始 リコー 独自の AI を活用した「RICOH360ビジネスパッケージ集客 AI 」を導入パノラマ画像から手間なく動画を生成し&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
+    },
+    {
+      "id": "8245c8739221179897105f4ba2c622c2",
+      "title": "LIFULLと連携し360度空間データと AI で賃貸物件の動画コンテンツを自動生成する取り組みを開始",
+      "url": "https://www.google.com/url?rct=j&sa=t&url=https://news.livedoor.com/pr_topics/detail/31231514/&ct=ga&cd=CAIyHDRmYjEyN2QzNmY1ODhiY2I6Y28uanA6amE6SlA&usg=AOvVaw2Dg5qyUo6EixaOKx1MaSbV",
+      "source": "Google Alert - AI リコー",
+      "published_iso": "2026-05-11T12:36:37+09:00",
+      "snippet": "物件の魅力を手軽に伝える集客コンテンツ制作の効率化を実現株式会社 リコー （社長執行役員：大山 晃）は、360度カメラ RICOH  THETAで取得した360度空間データを&nbsp;...",
+      "keyword": "AI リコー",
+      "category": "生成AI"
     }
   ]
 }
