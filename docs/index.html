@@ -294,7 +294,7 @@
               ${escHtml(a.title)}
             </a>
           </div>
-          <p class="card-summary">${escHtml(a.summary_ja)}</p>
+          <p class="card-summary">${escHtml(a.snippet || a.summary_ja || '')}</p>
           <div class="card-meta">
             ${a.source ? `<span class="card-source">${escHtml(a.source)}</span>` : ''}
             <span class="card-tag">${escHtml(a.keyword)}</span>

@@ -1,9 +1,6 @@
 settings:
   max_articles_per_feed: 10
   lookback_hours: 26
-  gemini_model: "gemini-2.0-flash-lite"
-  gemini_rpm_limit: 30
-  gemini_rpd_limit: 1500
   output_dir: "docs/data"
   processed_ids_file: "docs/data/.processed_ids.json"
   feeds_file: "docs/data/feeds.json"
