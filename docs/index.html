@@ -173,6 +173,11 @@
       border-radius: 4px;
       padding: 1px 7px;
     }
+    .filter-btn-kw {
+      font-size: 0.76rem;
+      padding: 3px 11px;
+      background: var(--bg);
+    }
     .status-message {
       text-align: center;
       padding: 60px 20px;
@@ -206,6 +211,7 @@
 
   <main>
     <div class="filter-bar" id="filter-bar"></div>
+    <div class="filter-bar" id="filter-bar-keywords" style="margin-top:-10px"></div>
     <div id="content">
       <div class="status-message">記事を読み込んでいます...</div>
     </div>
@@ -219,6 +225,7 @@
     let availableDates = [];
     let currentDateIndex = 0;
     let activeCategory = 'all';
+    let activeKeyword = 'all';
     let currentArticles = [];
 
     function formatDateJP(isoDate) {
@@ -253,19 +260,36 @@
     }
 
     function renderFilterBar(articles) {
+      // カテゴリ行
       const cats = ['all', ...new Set(articles.map(a => a.category))];
       document.getElementById('filter-bar').innerHTML = cats.map(cat => `
         <button class="filter-btn ${cat === activeCategory ? 'active' : ''}"
-                onclick="setCategory('${cat}')">
+                onclick="setCategory('${cat.replace(/'/g, "\\'")}')">
           ${cat === 'all' ? 'すべて' : escHtml(cat)}
         </button>
       `).join('');
+
+      // キーワード行（選択中カテゴリに絞る）
+      const visible = activeCategory === 'all'
+        ? articles
+        : articles.filter(a => a.category === activeCategory);
+      const keywords = [...new Set(visible.map(a => a.keyword))];
+      document.getElementById('filter-bar-keywords').innerHTML = keywords.length <= 1 ? '' :
+        ['all', ...keywords].map(kw => `
+          <button class="filter-btn filter-btn-kw ${kw === activeKeyword ? 'active' : ''}"
+                  onclick="setKeyword('${kw.replace(/'/g, "\\'")}')">
+            ${kw === 'all' ? 'キーワード: すべて' : escHtml(kw)}
+          </button>
+        `).join('');
     }
 
     function renderArticles(articles) {
-      const filtered = activeCategory === 'all'
+      let filtered = activeCategory === 'all'
         ? articles
         : articles.filter(a => a.category === activeCategory);
+      if (activeKeyword !== 'all') {
+        filtered = filtered.filter(a => a.keyword === activeKeyword);
+      }
 
       if (!filtered.length) {
         document.getElementById('content').innerHTML =
@@ -305,6 +329,13 @@
 
     function setCategory(cat) {
       activeCategory = cat;
+      activeKeyword = 'all';
+      renderFilterBar(currentArticles);
+      renderArticles(currentArticles);
+    }
+
+    function setKeyword(kw) {
+      activeKeyword = kw;
       renderFilterBar(currentArticles);
       renderArticles(currentArticles);
     }
@@ -327,7 +358,9 @@
       document.getElementById('content').innerHTML =
         '<div class="status-message">読み込み中...</div>';
       document.getElementById('filter-bar').innerHTML = '';
+      document.getElementById('filter-bar-keywords').innerHTML = '';
       activeCategory = 'all';
+      activeKeyword = 'all';
       updateNavButtons();
 
       try {
