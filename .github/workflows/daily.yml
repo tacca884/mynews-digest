@@ -2,8 +2,8 @@ name: Daily Alerts Digest
 
 on:
   schedule:
-    # 21:00 UTC = 06:00 JST (翌日)
-    - cron: '0 21 * * *'
+    # 20:40 UTC = 05:40 JST (遅延15〜20分を見込んで6:00前後に実行)
+    - cron: '40 20 * * *'
   workflow_dispatch:
 
 permissions:
